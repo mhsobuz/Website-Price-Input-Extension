@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SKU Price Scraper</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
 <body>
-  <input type="file" id="csv" accept=".csv"><br><br>
-  <button id="start">Start</button>
-  <button id="download">Download CSV</button>
+
+  <div class="container">
+    <h1>SKU Price Scraper</h1>
+
+    <label class="file-box">
+      <input type="file" id="csv" accept=".csv" hidden />
+      <span id="fileName">Choose CSV File</span>
+    </label>
+
+    <button id="start">Start Scraping</button>
+
+    <div class="hint">
+      • Keep One SKU per Line<br>
+      • Auto Download After Finish<br>
+      • CAPTCHA = Manually Solve
+    </div>
+  </div>
 
   <script src="popup.js"></script>
 </body>
