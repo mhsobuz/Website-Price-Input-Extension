@@ -18,5 +18,5 @@ chrome.storage.local.get("started", data => {
       sku,
       price: cleanPrice
     });
-  }, 5000);
+  }, 1000);
 });
